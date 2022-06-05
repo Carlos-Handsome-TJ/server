@@ -4,18 +4,24 @@
   "description": "后端代码",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.13.4"
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-json-error": "^3.1.2",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^6.3.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "tangjun",
   "license": "ISC",
-  "repository": {
-
-  },
-  "bugs": {
-  },
+  "repository": {},
+  "bugs": {},
   "homepage": ""
 }
