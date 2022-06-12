@@ -7,6 +7,8 @@ const parameter = require('koa-parameter')
 const mongoose = require('mongoose')
 const {connectDatabase} = require('./config')
 
+const userRouter = require('./routers/users')
+
 //连接远程数据库
 mongoose.connect(connectDatabase, {
     useUnifiedTopology: true,
@@ -48,7 +50,7 @@ app.use(koaBody({
 //路由中间件
 app.use(router.routes())
 //用户路由
-// app.use(userRouter.routes())
+app.use(userRouter.routes())
 // //上传文件路由
 // app.use(uploadRouter.routes())
 // //话题路由
